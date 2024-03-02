@@ -1,5 +1,6 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
+import axios from 'axios';
 import { GraphQLError } from 'graphql';
 import { v4 as uuid } from 'uuid';
 
@@ -42,6 +43,8 @@ const typeDefs = `#graphql
     getAllBooks: [Book]
     getBook(id: String): Book
     getAllBooksByAuthor(authorName: String): [Book]
+
+    getAllBooksFromRestApi: [Book]
   }
 
   type Mutation {
@@ -113,7 +116,12 @@ const resolvers = {
       const {id} = args;
       return books.find(book => book.id === id);
     },
-    getAllBooksByAuthor: (root, {authorName}) => books.filter(book => book.authorName === authorName)
+    getAllBooksByAuthor: (root, {authorName}) => books.filter(book => book.authorName === authorName),
+
+    getAllBooksFromRestApi: async (root, args) => {
+      const { data: booksFromRestApi } = await axios.get('http://localhost:3000/books');
+      return booksFromRestApi;
+    }
   },
 
   Mutation: {
