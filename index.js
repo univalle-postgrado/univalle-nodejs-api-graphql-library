@@ -42,12 +42,24 @@ const typeDefs = `#graphql
 
 const books = [
   {
+    id: 'd26fd654-f4d4-4b98-91e5-6d8c9569aed6',
     title: 'The Awakening',
-    author: 'Kate Chopin',
+    description: 'The Awakening es una novela de la escritora estadounidense Kate Chopin.',
+    publisher: 'W W Norton & Co Inc',
+    gender: 'NONE',
+    publishYear: 1899,
+    authorName: 'Kate Chopin'
   },
   {
+    id: '35b19ead-3aa9-415e-a46d-6621e1604119',
     title: 'City of Glass',
-    author: 'Paul Auster',
+    description: 'Ciudad de cristal es el tercer libro de la saga Cazadores de Sombras, escrita por Cassandra Clare. Fue publicada originalmente en Estados Unidos.',
+    isbn: '978-0140097313',
+    publisher: 'Simon & Schuster',
+    gender: 'FANTASY',
+    publishYear: 2009,
+    authorName: 'Paul Auster',
+    authorNationality: 'Estadounidense'
   },
 ];
 
