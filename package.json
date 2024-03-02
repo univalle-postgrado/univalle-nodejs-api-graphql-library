@@ -13,7 +13,9 @@
   "type": "module",
   "dependencies": {
     "@apollo/server": "^4.10.0",
+    "axios": "^1.6.7",
     "graphql": "^16.8.1",
+    "json-server": "^1.0.0-alpha.23",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
