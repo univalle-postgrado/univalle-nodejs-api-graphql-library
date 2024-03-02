@@ -36,7 +36,9 @@ const typeDefs = `#graphql
   # clients can execute, along with the return type for each. In this
   # case, the "books" query returns an array of zero or more Books (defined above).
   type Query {
+    getBooksCount: Int!
     getAllBooks: [Book]
+    getBook(id: String): Book
   }
 `;
 
@@ -67,7 +69,12 @@ const books = [
 // This resolver retrieves books from the "books" array above.
 const resolvers = {
   Query: {
+    getBooksCount: () => books.length,
     getAllBooks: () => books,
+    getBook: (root, args) => {
+      const {id} = args;
+      return books.find(book => book.id === id);
+    }
   },
 };
 
