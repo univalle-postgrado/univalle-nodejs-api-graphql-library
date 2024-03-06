@@ -1,24 +1,356 @@
 {
-  "books": [
+  "authors": [
     {
-      "id": "abcd-1234",
-      "title": "The Awakening",
-      "description": "The Awakening es una novela de la escritora estadounidense Kate Chopin. Fue publicada por vez primera en 1899.",
-      "publisher": "W W Norton & Co Inc",
-      "genre": "NONE",
-      "publishYear": "1899",
-      "authorName": "Kate Chopin"
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "name": "J.K. Rowling",
+      "nationality": "British"
     },
     {
-      "id": "4aa3598f-ec22-454e-9070-43aecfe0e485",
-      "title": "City of Glass",
-      "description": "Ciudad de cristal es el tercer libro de la saga Cazadores de Sombras, escrita por Cassandra Clare. Fue publicada originalmente en Estados Unidos.",
-      "isbn": "978-0140097313",
-      "publisher": "Simon & Schuster",
-      "genre": "FANTASY",
-      "publishYear": "2009",
-      "authorName": "Cassandra Clare",
-      "authorNationality": "Estadounidense"
+      "id": "d94a82b6-b7c2-44a1-a8ce-062b10ce17b6",
+      "name": "George Orwell",
+      "nationality": "British"
+    },
+    {
+      "id": "7ef1221d-0c84-4d7a-9b3d-7b5e7813c2b5",
+      "name": "Harper Lee",
+      "nationality": "American"
+    },
+    {
+      "id": "eef3ac86-788f-4f72-a1d8-3c7980703ba0",
+      "name": "J.R.R. Tolkien",
+      "nationality": "British"
+    },
+    {
+      "id": "c60671f2-3c3f-4b74-998f-331bd4f1f80e",
+      "name": "Jane Austen",
+      "nationality": "British"
+    },
+    {
+      "id": "f69d811d-786b-45e1-bd84-dbd80fcaf040",
+      "name": "Stephen King",
+      "nationality": "American"
+    },
+    {
+      "id": "f7d2a833-ff05-4d9f-baf4-598dbd3e907e",
+      "name": "Gabriel García Márquez",
+      "nationality": "Colombian"
+    },
+    {
+      "id": "bb92f0f3-9cb4-4571-84e7-3d8a54c2e9bc",
+      "name": "Agatha Christie",
+      "nationality": "British"
+    },
+    {
+      "id": "485d7877-b695-4d6a-88ce-836a8f6754c4",
+      "name": "Ernest Hemingway",
+      "nationality": "American"
+    },
+    {
+      "id": "7e3dcaac-9e18-4c0c-95b2-47768d3202c4",
+      "name": "Leo Tolstoy",
+      "nationality": "Russian"
+    }
+  ],
+  "books": [
+    {
+      "id": "89d3804e-71d7-4e5a-8b18-3f280e478a92",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "description": "The first book in the Harry Potter series.",
+      "isbn": "978-0-7475-3269-6",
+      "publisher": "Bloomsbury",
+      "gender": "FANTASY",
+      "year": 1997,
+      "author_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    },
+    {
+      "id": "c8bc9612-4647-475f-9b36-83f24dbd6c6a",
+      "title": "1984",
+      "description": "A dystopian novel by George Orwell.",
+      "isbn": "978-0-452-28423-4",
+      "publisher": "Secker & Warburg",
+      "gender": "DYSTOPIAN",
+      "year": 1949,
+      "author_id": "d94a82b6-b7c2-44a1-a8ce-062b10ce17b6"
+    },
+    {
+      "id": "8db17b8f-75db-4f3e-b0ce-019b9072d846",
+      "title": "To Kill a Mockingbird",
+      "description": "A classic novel by Harper Lee.",
+      "isbn": "978-0-06-112008-4",
+      "publisher": "J.B. Lippincott & Co.",
+      "gender": "FICTION",
+      "year": 1960,
+      "author_id": "7ef1221d-0c84-4d7a-9b3d-7b5e7813c2b5"
+    },
+    {
+      "id": "6fe5a0a4-48b1-4b3e-8c4d-c2a4965e97e7",
+      "title": "The Hobbit",
+      "description": "A fantasy novel by J.R.R. Tolkien.",
+      "isbn": "978-0-395-13283-2",
+      "publisher": "Allen & Unwin",
+      "gender": "FANTASY",
+      "year": 1937,
+      "author_id": "eef3ac86-788f-4f72-a1d8-3c7980703ba0"
+    },
+    {
+      "id": "b1946dd1-1904-4f16-a0cf-826bb47a5e85",
+      "title": "Pride and Prejudice",
+      "description": "A novel by Jane Austen.",
+      "isbn": "978-0-19-953556-9",
+      "publisher": "T. Egerton, Whitehall",
+      "gender": "ROMANCE",
+      "year": 1813,
+      "author_id": "c60671f2-3c3f-4b74-998f-331bd4f1f80e"
+    },
+    {
+      "id": "5f8d0771-0365-47f0-831a-b9422dbaa40a",
+      "title": "The Shining",
+      "description": "A horror novel by Stephen King.",
+      "isbn": "978-0-385-12167-5",
+      "publisher": "Doubleday",
+      "gender": "HORROR",
+      "year": 1977,
+      "author_id": "f69d811d-786b-45e1-bd84-dbd80fcaf040"
+    },
+    {
+      "id": "24a376d7-4f7e-41c0-926e-d53a18cb120b",
+      "title": "One Hundred Years of Solitude",
+      "description": "A novel by Gabriel García Márquez.",
+      "isbn": "978-0-06-093268-8",
+      "publisher": "Harper & Row",
+      "gender": "Magical Realism",
+      "year": 1967,
+      "author_id": "f7d2a833-ff05-4d9f-baf4-598dbd3e907e"
+    },
+    {
+      "id": "e7f7a057-fae7-4cd8-9180-8e38a0d1a11d",
+      "title": "Murder on the Orient Express",
+      "description": "A detective novel by Agatha Christie.",
+      "isbn": "978-0-316-70283-4",
+      "publisher": "Collins Crime Club",
+      "gender": "MYSTERY",
+      "year": 1934,
+      "author_id": "bb92f0f3-9cb4-4571-84e7-3d8a54c2e9bc"
+    },
+    {
+      "id": "79313fb2-3f11-49b7-8f82-4c9cbf5ef8dd",
+      "title": "The Old Man and the Sea",
+      "description": "A novel by Ernest Hemingway.",
+      "isbn": "978-0-684-80122-3",
+      "publisher": "Charles Scribner's Sons",
+      "gender": "Adventure",
+      "year": 1952,
+      "author_id": "485d7877-b695-4d6a-88ce-836a8f6754c4"
+    },
+    {
+      "id": "3d548d99-eeb0-4c50-992a-c076b4a5c14b",
+      "title": "War and Peace",
+      "description": "A novel by Leo Tolstoy.",
+      "isbn": "978-1-85326-062-9",
+      "publisher": "The Russian Messenger",
+      "gender": "FICTION",
+      "year": 1869,
+      "author_id": "7e3dcaac-9e18-4c0c-95b2-47768d3202c4"
+    },
+    {
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "title": "Harry Potter and the Chamber of Secrets",
+      "description": "The second book in the Harry Potter series.",
+      "isbn": "978-0-7475-3849-0",
+      "publisher": "Bloomsbury",
+      "gender": "FANTASY",
+      "year": 1998,
+      "author_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    },
+    {
+      "id": "8c5e0ed3-530e-4d5a-9b0f-06ebf4ee2ee2",
+      "title": "Animal Farm",
+      "description": "An allegorical novella by George Orwell.",
+      "isbn": "978-0-452-28423-4",
+      "publisher": "Secker & Warburg",
+      "gender": "Satire",
+      "year": 1945,
+      "author_id": "d94a82b6-b7c2-44a1-a8ce-062b10ce17b6"
+    },
+    {
+      "id": "9a9e2e6b-d78e-4ce2-aa3b-86a7ec3672f7",
+      "title": "Go Set a Watchman",
+      "description": "A novel by Harper Lee.",
+      "isbn": "978-0-06-240985-0",
+      "publisher": "Harper",
+      "gender": "FICTION",
+      "year": 2015,
+      "author_id": "7ef1221d-0c84-4d7a-9b3d-7b5e7813c2b5"
+    },
+    {
+      "id": "ad173d46-aa9f-4bf5-bade-70a95bb2d707",
+      "title": "The Lord of the Rings",
+      "description": "A high fantasy novel by J.R.R. Tolkien.",
+      "isbn": "978-0-618-62412-5",
+      "publisher": "George Allen & Unwin",
+      "gender": "FANTASY",
+      "year": 1954,
+      "author_id": "eef3ac86-788f-4f72-a1d8-3c7980703ba0"
+    },
+    {
+      "id": "2a09d32b-6c0d-4bd5-bc99-ee87a350bca3",
+      "title": "Sense and Sensibility",
+      "description": "A novel by Jane Austen.",
+      "isbn": "978-0-19-953556-9",
+      "publisher": "T. Egerton, Whitehall",
+      "gender": "ROMANCE",
+      "year": 1811,
+      "author_id": "c60671f2-3c3f-4b74-998f-331bd4f1f80e"
+    },
+    {
+      "id": "ca21f8fe-d73f-45de-b263-d0ef6a31826f",
+      "title": "The Stand",
+      "description": "A post-apocalyptic horror novel by Stephen King.",
+      "isbn": "978-0-385-12167-5",
+      "publisher": "Doubleday",
+      "gender": "HORROR",
+      "year": 1978,
+      "author_id": "f69d811d-786b-45e1-bd84-dbd80fcaf040"
+    },
+    {
+      "id": "f51789f4-41db-4b1d-af77-5a5a84fb7a80",
+      "title": "Love in the Time of Cholera",
+      "description": "A novel by Gabriel García Márquez.",
+      "isbn": "978-0-14-012389-0",
+      "publisher": "Penguin Books",
+      "gender": "ROMANCE",
+      "year": 1985,
+      "author_id": "f7d2a833-ff05-4d9f-baf4-598dbd3e907e"
+    },
+    {
+      "id": "773a8f65-eb9c-4c67-9eb2-7080bc1ecbfa",
+      "title": "Murder in Mesopotamia",
+      "description": "A detective novel by Agatha Christie.",
+      "isbn": "978-0-00-711380-2",
+      "publisher": "Collins Crime Club",
+      "gender": "MYSTERY",
+      "year": 1936,
+      "author_id": "bb92f0f3-9cb4-4571-84e7-3d8a54c2e9bc"
+    },
+    {
+      "id": "e4c37da7-9405-4c05-af12-5e7492c3e5d8",
+      "title": "A Farewell to Arms",
+      "description": "A novel by Ernest Hemingway.",
+      "isbn": "978-0-684-80122-3",
+      "publisher": "Charles Scribner's Sons",
+      "gender": "WAR",
+      "year": 1929,
+      "author_id": "485d7877-b695-4d6a-88ce-836a8f6754c4"
+    },
+    {
+      "id": "6dcb9d95-66a2-4a3f-8691-5c90c634c5e4",
+      "title": "Anna Karenina",
+      "description": "A novel by Leo Tolstoy.",
+      "isbn": "978-1-85326-062-9",
+      "publisher": "The Russian Messenger",
+      "gender": "Tragedy",
+      "year": 1877,
+      "author_id": "7e3dcaac-9e18-4c0c-95b2-47768d3202c4"
+    },
+    {
+      "id": "b315d17e-0e6a-4dd7-b168-6b2f5f56e50a",
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "description": "The third book in the Harry Potter series.",
+      "isbn": "978-0-7475-4215-2",
+      "publisher": "Bloomsbury",
+      "gender": "FANTASY",
+      "year": 1999,
+      "author_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    },
+    {
+      "id": "dd5b95d8-36fe-4e6b-b1c9-c4f6b13930a3",
+      "title": "Brave New World",
+      "description": "A dystopian novel by Aldous Huxley.",
+      "isbn": "978-0-06-085052-4",
+      "publisher": "Chatto & Windus",
+      "gender": "DYSTOPIAN",
+      "year": 1932,
+      "author_id": "d94a82b6-b7c2-44a1-a8ce-062b10ce17b6"
+    },
+    {
+      "id": "513e4654-4d6c-4755-858f-016117e2b0f2",
+      "title": "To Kill a Mockingbird",
+      "description": "A classic novel by Harper Lee.",
+      "isbn": "978-0-06-112008-4",
+      "publisher": "J.B. Lippincott & Co.",
+      "gender": "FICTION",
+      "year": 1960,
+      "author_id": "7ef1221d-0c84-4d7a-9b3d-7b5e7813c2b5"
+    },
+    {
+      "id": "2fe88e24-b09f-429f-90e9-5662f3e33a23",
+      "title": "The Fellowship of the Ring",
+      "description": "The first volume of The Lord of the Rings.",
+      "isbn": "978-0-395-73987-2",
+      "publisher": "Allen & Unwin",
+      "gender": "FANTASY",
+      "year": 1954,
+      "author_id": "eef3ac86-788f-4f72-a1d8-3c7980703ba0"
+    },
+    {
+      "id": "d6945975-4d23-4f9d-ae12-f648793c7ef6",
+      "title": "Emma",
+      "description": "A novel by Jane Austen.",
+      "isbn": "978-0-19-953556-9",
+      "publisher": "T. Egerton, Whitehall",
+      "gender": "ROMANCE",
+      "year": 1815,
+      "author_id": "c60671f2-3c3f-4b74-998f-331bd4f1f80e"
+    },
+    {
+      "id": "c8b6aabb-6c0b-4eaa-97f5-7921a482481a",
+      "title": "It",
+      "description": "A horror novel by Stephen King.",
+      "isbn": "978-0-670-81302-4",
+      "publisher": "Viking",
+      "gender": "HORROR",
+      "year": 1986,
+      "author_id": "f69d811d-786b-45e1-bd84-dbd80fcaf040"
+    },
+    {
+      "id": "56e42806-cc68-4ee6-a68d-95d2d8ce0b4f",
+      "title": "Chronicle of a Death Foretold",
+      "description": "A novella by Gabriel García Márquez.",
+      "isbn": "978-0-679-73885-0",
+      "publisher": "Knopf",
+      "gender": "FANTASY",
+      "year": 1981,
+      "author_id": "f7d2a833-ff05-4d9f-baf4-598dbd3e907e"
+    },
+    {
+      "id": "9bc590e2-55cd-4da5-8312-7c9fc7ff3f4b",
+      "title": "Murder on the Orient Express",
+      "description": "A detective novel by Agatha Christie.",
+      "isbn": "978-0-316-70283-4",
+      "publisher": "Collins Crime Club",
+      "gender": "MYSTERY",
+      "year": 1934,
+      "author_id": "bb92f0f3-9cb4-4571-84e7-3d8a54c2e9bc"
+    },
+    {
+      "id": "88bb1e3f-102e-4f93-9c16-fad575bd04b1",
+      "title": "For Whom the Bell Tolls",
+      "description": "A novel by Ernest Hemingway.",
+      "isbn": "978-0-684-80122-3",
+      "publisher": "Charles Scribner's Sons",
+      "gender": "WAR",
+      "year": 1940,
+      "author_id": "485d7877-b695-4d6a-88ce-836a8f6754c4"
+    },
+    {
+      "id": "85d819a6-238a-4bd9-bad8-2ba19f7e1c27",
+      "title": "Anna Karenina",
+      "description": "A novel by Leo Tolstoy.",
+      "isbn": "978-1-85326-062-9",
+      "publisher": "Alba Editorial",
+      "gender": "FICTION",
+      "year": 1878,
+      "author_id": "7e3dcaac-9e18-4c0c-95b2-47768d3202c4"
     }
   ]
 }
