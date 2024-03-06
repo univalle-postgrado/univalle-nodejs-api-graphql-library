@@ -2,6 +2,12 @@
 
 Para que el proyecto funcione correctamente debe seguir los siguientes pasos después de clonarse el proyecto
 
+Cambiar de rama en el repositorio
+
+```
+git checkout dev-from-api-restful
+```
+
 Instalar los paquetes de node.js
 
 ```
